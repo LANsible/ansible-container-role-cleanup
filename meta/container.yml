@@ -1,0 +1,6 @@
+---
+image: centos:7
+labels:
+  maintainer: Wilmar den Ouden <info@wilmardenouden.nl>
+environment:
+  container: docker
