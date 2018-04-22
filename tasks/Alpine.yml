@@ -1,4 +1,10 @@
 ---
+- name: Check if cache enabled
+  stat:
+    path: /etc/apk/cache
+  register: cleanup_alpine_cache
+
 - name: Clean package cache
   command: apk cache clean
+  when: cleanup_alpine_cache.stat.islnk is defined
   changed_when: false
