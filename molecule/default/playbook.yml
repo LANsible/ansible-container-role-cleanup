@@ -11,4 +11,4 @@
       setup:
 
   roles:
-    - role: ansible-container-role-bootstrap
+    - role: ansible-container-role-cleanup
