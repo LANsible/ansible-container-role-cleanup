@@ -1,3 +1,5 @@
 ---
 - name: Clean package cache
   command: dnf clean all
+  command_warnings: false
+  changed_when: false
