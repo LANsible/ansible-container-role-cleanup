@@ -1,10 +1,10 @@
 ---
 - name: Clean package cache
   command: yum clean all
-  command_warnings: false
   changed_when: false
 
 - name: Remove more yum data
   file:
     path: /var/cache/yum
     state: absent
+  changed_when: false

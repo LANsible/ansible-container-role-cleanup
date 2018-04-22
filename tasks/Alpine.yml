@@ -1,5 +1,4 @@
 ---
 - name: Clean package cache
   command: apk cache clean
-  command_warnings: false
   changed_when: false
